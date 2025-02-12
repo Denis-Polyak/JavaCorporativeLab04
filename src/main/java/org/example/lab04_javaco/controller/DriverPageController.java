@@ -1,7 +1,6 @@
 package org.example.lab04_javaco.controller;
 
 import org.example.lab04_javaco.entity.Driver;
-import org.example.lab04_javaco.repository.DriverRepository;
 import org.example.lab04_javaco.service.DriverService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -76,5 +75,3 @@ public class DriverPageController {
         return "redirect:/drivers/list";
     }
 }
-
-

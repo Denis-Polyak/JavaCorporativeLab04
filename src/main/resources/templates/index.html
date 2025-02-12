@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="uk" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" th:href="@{/static/css/style.css}">
+</head>
+<body>
+<div class="container">
+    <a th:href="@{/drivers/add/addDriver}" class="tile small" id="drivers">
+        <h2>Drivers</h2>
+    </a>
+    <div class="tile small" id="vehicles">
+        <h2>Vehicles</h2>
+    </div>
+    <div class="tile small" id="trailers">
+        <h2>Trailers</h2>
+    </div>
+    <div class="tile large" id="logistic-unit">
+        <h1>Logistic Unit</h1>
+    </div>
+</div>
+</body>
+</html>
