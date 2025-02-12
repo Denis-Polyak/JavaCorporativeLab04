@@ -14,8 +14,12 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         http
                 .csrf().disable()
                 .authorizeRequests()
-                .antMatchers("/index","/drivers/add/addDriver").permitAll()
-                .antMatchers("/css/**", "/js/**", "/images/**").permitAll()
-                .anyRequest().authenticated();
+                .antMatchers("/css/**", "/js/**", "/images/**", "/static/**").permitAll()
+                .antMatchers("/index", "/drivers/add").permitAll()
+                .anyRequest().authenticated()
+                .and()
+                .formLogin()
+                .loginPage("/login")
+                .permitAll();
     }
 }

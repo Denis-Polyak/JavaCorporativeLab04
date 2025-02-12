@@ -26,7 +26,7 @@ public class DriverPageController {
     @GetMapping("/add")
     public String showAddDriverForm(Model model) {
         model.addAttribute("driver", new Driver());
-        return "addDriver";  // Повертаємо шаблон для додавання водія
+        return "addDriver";
     }
 
     @PostMapping("/save")
